@@ -2140,3 +2140,9 @@ export const touch = async (args) => {
 
   return results.join("\r\n");
 };
+
+export const pwd = async(basePath) => {
+  await checkForUpdates();
+
+  return basePath + currentPath;
+}

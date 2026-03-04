@@ -163,6 +163,7 @@ const helpLines = [
   "  \x1b[92mmv\x1b[0m                   Move files and directories",
   `  \x1b[92mneofetch\x1b[0m             Displays system information aesthetically`,
   `  \x1b[92mperiodic-table-cli\x1b[0m   Shows interactive periodic table`,
+  "  pwd                  Prints the current working directory",
   "  reset-files          Reset the changes made to the filesystem",
   "  \x1b[92mrm\x1b[0m                   Remove files",
   "  \x1b[92mrmdir\x1b[0m                Remove empty directories",

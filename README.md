@@ -42,6 +42,7 @@ A feature-rich terminal simulator that runs entirely in your browser, providing 
 - `mv` - Move files and directories
 - [neofetch](https://github.com/dylanaraps/neofetch) - Displays system information in an aesthetic way. Some ASCII art are from [fastfetch](https://github.com/fastfetch-cli/fastfetch). Weather and temperature information is fetched from [Open-Meteo](https://open-meteo.com/en/docs) using the approximate location collected from IP address via [GeoJS](https://www.geojs.io/)
 - [periodic-table-cli](https://github.com/spirometaxas/periodic-table-cli) - Interactive periodic table explorer
+- `pwd` - Prints the current working directory
 - `reset-files` - Reset the changes made to the filesystem
 - `rm` - Remove files
 - `rmdir` - Remove empty directories
@@ -62,8 +63,8 @@ A feature-rich terminal simulator that runs entirely in your browser, providing 
 To get started with Pseudoshell, clone the repository and install the required dependencies:
 
 ```shell
-git clone https://github.com/LunarEclipseCode/omni-tools
-cd omni-tools
+git clone https://github.com/ionmeo/pseudoshell
+cd pseudoshell
 npm install
 npm run dev
 ```
