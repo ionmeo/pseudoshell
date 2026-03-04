@@ -5,7 +5,7 @@ import { handlePeriodicTableData } from "./periodic-table-data";
 import { elements } from "../../public/elementData";
 import SteamLocomotive from "./steam-locomotive";
 import { displayHelp } from "./displayHelp";
-import { ls, cd, mkdir, resetFileSystem, rmdir, mv, cp, rm, cat, touch, stat } from "./filesystem";
+import { ls, cd, mkdir, resetFileSystem, rmdir, mv, cp, rm, cat, touch, stat, pwd } from "./filesystem";
 
 let currentTheme = "default";
 
@@ -99,7 +99,7 @@ export const executeCommand = async (input, terminal) => {
       }
       const catResult = await cat(commandArgs, terminal.term);
       terminal.write(catResult);
-      return false;
+      return true;
     case "touch":
       if (commandArgs[0] === "--help") {
         return displayHelp(command, terminal);
@@ -189,6 +189,9 @@ export const executeCommand = async (input, terminal) => {
         return true;
       }
       return false;
+    case "pwd":
+      terminal.write(await pwd(`/home/${terminal.username.split("@")[0]}`));
+      return true;
     case "sl":
       if (commandArgs[0] === "--help") {
         const steamHelpLines = ["Usage: sl [OPTIONS]", "Displays steam locomotive to cure your mistyping", "", "Options:", "  -a      An accident is occurring. People will cry for help.", "  -l      Little version", "  -c      Displays alternate steam locomotive"];
