@@ -63,8 +63,8 @@ A feature-rich terminal simulator that runs entirely in your browser, providing 
 To get started with Pseudoshell, clone the repository and install the required dependencies:
 
 ```shell
-git clone https://github.com/LunarEclipseCode/omni-tools
-cd omni-tools
+git clone https://github.com/ionmeo/pseudoshell
+cd pseudoshell
 npm install
 npm run dev
 ```
